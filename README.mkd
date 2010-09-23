@@ -1,0 +1,23 @@
+# httputil.py
+
+## What is this
+This module get some information from webpage.
+
+- The webpage is exist or not.
+- What is the webpage's content type.
+- Charset of the webpage.
+- Webpage's Content
+
+## Usage
+
+    from httputil import HTTPUtil
+    htuil = HTTPUtil('target url')
+    
+    is_exist = hutil.isexist()
+    
+    content_type = hutil.get_content_type()
+    
+    charset = hutil.get_charset_from_header()
+    charset = hutil.get_charset_from_html()
+    
+    html = hutil.get_html()
