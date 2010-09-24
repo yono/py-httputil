@@ -1,0 +1,7 @@
+README
+httputil.py
+setup.py
+httputil.egg-info/PKG-INFO
+httputil.egg-info/SOURCES.txt
+httputil.egg-info/dependency_links.txt
+httputil.egg-info/top_level.txt

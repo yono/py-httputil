@@ -41,15 +41,15 @@ class TestHTTPUtil(object):
 
     def test_get_charset_from_header(self):
         self.setup()
-        assert self.hutil.get_charset_from_header() is None
+        assert self.hutil.get_charset_from_header() is ''
 
     def test_get_charset_from_html(self):
         self.setup()
-        assert self.hutil.get_charset_from_html() is None
+        assert self.hutil.get_charset_from_html() is ''
 
     def test_get_content_type(self):
         self.setup()
-        assert self.hutil.get_content_type() is None
+        assert self.hutil.get_content_type() is ''
 
     def test_get_html(self):
         self.setup()
