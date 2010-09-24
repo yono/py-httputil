@@ -12,8 +12,8 @@ This module get some information from webpage.
 
     from httputil import HTTPUtil
     htuil = HTTPUtil('target url')
-    
-    is_exist = hutil.isexist()
+   	
+    is_exist, url = hutil.isexist()
     
     content_type = hutil.get_content_type()
     
