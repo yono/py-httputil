@@ -15,14 +15,19 @@ This module get some information from webpage.
 
 ## Usage
 
-    from httputil import HTTPUtil
-    htuil = HTTPUtil('target url')
+    >> from httputil import HTTPUtil
+    >> hutil = HTTPUtil('http://twitter.com')
    	
-    is_exist, url = hutil.isexist()
+    >> is_exist, url = hutil.is_exist()
+    >> print is_exist, url
     
-    content_type = hutil.get_content_type()
+    >> content_type = hutil.get_content_type()
+    >> print content_type
     
-    charset = hutil.get_charset_from_header()
-    charset = hutil.get_charset_from_html()
+    >> charset = hutil.get_charset_from_header()
+    >> print charset
+    >> charset = hutil.get_charset_from_html()
+    >> print charset
     
-    html = hutil.get_html()
+    >> html = hutil.get_html()
+    >> print html

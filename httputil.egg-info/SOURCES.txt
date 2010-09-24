@@ -1,4 +1,3 @@
-README
 httputil.py
 setup.py
 httputil.egg-info/PKG-INFO
