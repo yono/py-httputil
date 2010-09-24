@@ -8,6 +8,11 @@ This module get some information from webpage.
 - Charset of the webpage.
 - Webpage's Content
 
+## Install
+    $ git clone git://github.com/yono/py-httputil.git
+    $ cd py-httputil
+    $ sudo python setup.py install
+
 ## Usage
 
     from httputil import HTTPUtil
