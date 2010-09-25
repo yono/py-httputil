@@ -31,7 +31,7 @@ class TestHTTPUtil(object):
     def setup(self):
         httplib.HTTP._conection_class = FakeHTTPConnection
         FakeSocket.sendbuf = StringIO()
-        FakeSocket.recvbuf = StringIO('Content-type: text/html;\n\n')
+        FakeSocket.recvbuf = StringIO('Content-Type: text/html;\n\n')
         self.url = 'http://twitter.com'
         self.hutil = httputil.HTTPUtil(self.url, FakeHTTPConnection)
 
@@ -53,4 +53,4 @@ class TestHTTPUtil(object):
 
     def test_get_html(self):
         self.setup()
-        assert self.hutil.get_html() == ''
+        assert self.hutil.get_html() == 'Content-Type: text/html;\n\n'
