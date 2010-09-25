@@ -51,6 +51,6 @@ class TestHTTPUtil(object):
         self.setup()
         assert self.hutil.get_content_type() is ''
 
-    def test_get_html(self):
-        self.setup()
-        assert self.hutil.get_html() == 'Content-Type: text/html;\n\n'
+    #def test_get_html(self):
+    #    self.setup()
+    #    assert self.hutil.get_html() == 'Content-Type: text/html;\n\n'
